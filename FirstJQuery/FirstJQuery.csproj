@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FormEvents.html" />
     <Content Include="Index.html" />
     <Content Include="jQuery\jquery-3.6.0.js" />
     <Content Include="MouseEvents.html" />

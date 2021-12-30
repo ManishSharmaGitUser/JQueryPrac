@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery First Use</title>
+    <!--<script src="jQuery/jquery-3.6.0.js"></script>-->
+    <style>
+        label{
+            margin-right :14px;
+
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <h1>Form Events</h1>
+
+    <br />
+    <form>
+        <label for="name">Name</label>
+        <input type="text" class="" id="name" /><br /><br />
+
+        <label for="class">Class</label>
+        <input type="text" class="" id="class" /><br /><br />
+
+        <label for="country">Country</label>
+        <select id="country">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="CHINA">CHINA</option>
+        </select>
+
+        <br />
+        <input type="submit" />
+    </form>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("input[type='text']").focus(function () {
+                $(this).css('background-color', 'lime');
+            });
+
+             $("input[type='text']").blur(function () {
+                $(this).css('background-color', '');
+            });
+
+            $('#country').change(function () {
+                $(this).css('background-color', 'blue');
+                //var a = $(this).val();
+                //$('#test').html(a);
+            });
+
+        });
+    </script>
+</body>
+
+</html>
